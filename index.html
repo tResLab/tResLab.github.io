@@ -9,20 +9,42 @@
 </head>
 <body>
     <header class="site-header">
-        <p class="site-title">tResLab</p>
+        <div class="site-branding">
+        <img class="site-logo" src="images/Logo_LAB/logo_LAB_nowords.png" alt="tResLab Logo">
+        <img class="site-title" src="images/Logo_LAB/logo_text.png" alt="tResLab Logo with Words">
+        </div>
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-nav"
+            aria-label="Open menu"
+            >
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M3 6h18M3 12h18M3 18h18" />
+            </svg>
+        </button>
+        <nav class="site-nav" id="site-nav">
+            <a href="emiliaromagna-rna-salon/">Emilia-Romagna RNA Salon</a>
+            <a href="about.html">About</a>
+            <a class="current" href="index.html">Home</a>
+            
+        </nav>
     </header>
 
     <main class="site-main">
+
+        <section class="hero">
+
         <h1 class="page-title">tResLab</h1>
         <p class="notice">Website under construction</p>
         <p class="lead">We are currently working on our new website. More information will be available soon.</p>
-        <nav class="site-nav">
-            <a href="emiliaromagna-rna-salon/">Emilia-Romagna RNA Salon</a>
-        </nav>
+        </section>
     </main>
 
     <footer class="site-footer">
         <p>tResLab</p>
     </footer>
+    <script src="js/main.js" defer></script>
 </body>
 </html>
