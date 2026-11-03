@@ -319,7 +319,7 @@ html {
 }
 
 .salon .department-link {
-    color: inherit;
+    color: var(--color-muted);
     text-decoration: underline;
     text-decoration-color: var(--color-border);
     text-decoration-thickness: 1px;
