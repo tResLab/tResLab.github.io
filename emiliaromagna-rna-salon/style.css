@@ -318,6 +318,35 @@ html {
     line-height: 1.55;
 }
 
+.salon .department-link {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--color-border);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+
+    transition:
+        color 200ms ease,
+        text-decoration-color 200ms ease;
+}
+
+.salon .department-link:hover {
+    color: var(--color-accent);
+    text-decoration-color: var(--color-accent);
+}
+
+.department-link:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .department-link {
+        transition: none;
+    }
+}
+
 /* ==========================================================
    RESPONSIVE
    ========================================================== */
@@ -339,14 +368,14 @@ html {
 /* Team */
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem 1rem;
     text-align: center;
 }
 
 .member-photo {
-    width: 8rem;
-    height: 8rem;
+    width: 6rem;
+    height: 6rem;
     margin: 0 auto 1rem;
     border-radius: 50%;
     background-color: var(--color-surface);
@@ -373,6 +402,22 @@ html {
     margin: 0.25rem 0 0;
     color: var(--color-muted);
     font-size: 0.9375rem;
+}
+
+/* Tablet e desktop */
+@media (min-width: 40rem) {
+    .team-grid {
+        grid-template-columns: repeat(
+            auto-fit,
+            minmax(12rem, 1fr)
+        );
+        gap: 2rem;
+    }
+
+    .member-photo {
+        width: 8rem;
+        height: 8rem;
+    }
 }
 
 /* Contact */
