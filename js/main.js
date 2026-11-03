@@ -1,3 +1,24 @@
+const siteHeader = document.querySelector(".site-header");
+
+if (siteHeader) {
+	function updateHeader() {
+    console.log({
+        scrollY: window.scrollY,
+        scrolled: siteHeader.classList.contains("is-scrolled")
+    });
+
+    if (window.scrollY > 80) {
+        siteHeader.classList.add("is-scrolled");
+    } else if (window.scrollY <= 16) {
+        siteHeader.classList.remove("is-scrolled");
+    }
+}
+
+	window.addEventListener("scroll", updateHeader, { passive: true });
+	window.addEventListener("pageshow", updateHeader);
+	updateHeader();
+}
+
 const menuToggle = document.querySelector(".menu-toggle");
 const siteNav = menuToggle
 	? document.getElementById(menuToggle.getAttribute("aria-controls"))

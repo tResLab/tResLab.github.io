@@ -4,23 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Emilia-Romagna RNA Salon &mdash; tResLab</title>
-    <meta name="description" content="Emilia-Romagna RNA Salon &mdash; page under construction.">
+    <meta name="description" content="Emilia-Romagna RNA Salon: a regional meeting for researchers working on RNA biology.">
+    <link rel="icon" type="image/x-icon" href="./images/rna-salon-favicon.ico">
     <link rel="stylesheet" href="../css/style.css">
-    <style>
-        .page-logo {
-            display: block;
-            max-width: 280px;
-            width: 100%;
-            height: auto;
-            margin: 0 auto 1.5rem;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="salon">
     <header class="site-header">
         <div class="site-branding">
-        <img class="site-logo" src="../images/Logo_LAB/logo_LAB_nowords.png" alt="tResLab Logo">
-        <img class="site-title" src="../images/Logo_LAB/logo_text.png" alt="tResLab Logo with Words">
+                        <a href="/"><img class="site-logo" src="./images/logo-rna-society.png" alt="RNA Society"></a>
+            <a href="/"><img class="site-logo" src="./images/RNA Salon ER_prova logo.png" alt="RNA Salon Emilia-Romagna Logo"></a>
         </div>
         <button
             class="menu-toggle"
@@ -34,22 +27,310 @@
             </svg>
         </button>
         <nav class="site-nav" id="site-nav">
-            <a class="current" href="/emiliaromagna-rna-salon/">Emilia-Romagna RNA Salon</a>
-            <a href="/about.html">About</a>
-            <a href="/">Home</a>
-            
+            <a href="#news">News &amp; Events</a>
+            <a href="#participants">Participants</a>
+            <a href="#team">Team</a>
+            <a href="#contact">Contact</a>
+            <a href="/">tResLab</a>
         </nav>
     </header>
 
-    <main class="site-main">
-        <img class="page-logo" src="../images/RNA Salon ER_prova logo.jpg" alt="RNA Salon Emilia-Romagna logo">
-        <h1 class="page-title">Emilia-Romagna RNA Salon</h1>
-        <p class="notice">Page under construction</p>
-        <p class="lead">We are currently preparing this page. More information about the Emilia-Romagna RNA Salon will be available soon.</p>
+    <main>
+        <!-- HERO -->
+        <section class="hero" id="top">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-brand">
+                        <img class="hero-logo" src="./images/RNA Salon ER_prova logo.png" alt="RNA Salon Emilia-Romagna logo">
+                    </div>
+                    <div class="hero-copy">
+                        <h1 class="visually-hidden">Emilia-Romagna RNA Salon</h1>
+                        
+                        <h2 class="hero-title">The Emilia-Romagna RNA research community</h2>
+                        <p class="hero-lead">Sharing ideas, fostering collaborations and advancing RNA biology.</p>
+                        <div class="hero-actions">
+                            <a class="button button-primary" href="#news">Events</a>
+                            <a class="button button-secondary" href="#team">About us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ABOUT US -->
+        <section class="section" id="team">
+            <div class="container">
+                <h2 class="section-title">About us</h2>
+                <p class="section-intro">In recent years, insights into the complex life of RNA have revolutionized basic research 
+                    and unlocked transformative applications across multiple fields, particularly in <span class="section-emphasis">understanding and treating human disease</span>. </p>
+                <p class="section-intro">The Emilia-Romagna (ER) Salon is meant to bring together the <span class="section-emphasis">regional community of scientists passionate about RNA Biology</span>. </p>
+                <p class="section-intro">Leveraging the unique infrastructure of local research institutions his hub aims to <span class="section-emphasis">stimulate discussion and build synergies</span>
+                     to bridge the gap between basic discovery and clinical applications in the field of RNA biology. </p>
+                <p class="section-intro">We hold meetings in an variety of formats, in person and online, with the aim of creating a favorable environment serving as 
+                    an incubator that <span class="section-emphasis">accelerates ideas, projects and innovation</span></p>
+            </div>
+        </section>
+
+        <!-- NEWS & EVENTS -->
+        <section class="section section-alt" id="news">
+            <div class="container">
+                <h2 class="section-title">News &amp; Events</h2>
+                <ul class="card-list">
+                    <li class="card">
+                        <time class="card-date" datetime="2026-10-23">23 October 2026</time>
+                        <h3 class="card-title">ABCD meeting</h3>
+                        <p class="card-meta">Location &middot; City</p>
+                        <p>Short description of the event or news item.</p>
+                    </li>
+                    <li class="card">
+                        <time class="card-date" datetime="2026-11-05">5 November 2026</time>
+                        <h3 class="card-title">Kickoff meeting</h3>
+                        <p class="card-meta">Location &middot; City</p>
+                        <p>Short description of the event or news item.</p>
+                    </li>
+                    <li class="card">
+                        <time class="card-date" datetime="2026-01-01">1 January 2026</time>
+                        <h3 class="card-title">News title</h3>
+                        <p>Short description of the event or news item.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- PARTICIPANTS -->
+<section class="section" id="participants">
+    <div class="container">
+        <h2 class="section-title">Participants</h2>
+        <p class="section-intro">
+            Research groups and institutions taking part in the Salon.
+        </p>
+
+        <div class="participant-cities">
+
+            <!-- Bologna -->
+            <section class="participant-city">
+                <h3 class="city-name">Bologna</h3>
+
+                <div class="city-institutions">
+                    <div class="institution">
+                        <h4 class="institution-name">
+                            University of Bologna (UNIBO)
+                        </h4>
+
+                        <ul class="department-list">
+                            <li>Dipartimento di Scienze Biomediche e Neuromotorie (DIBINEM)</li>
+                            <li>Dipartimento di Farmacia e Biotecnologie (FABIT)</li>
+                            <li>Dipartimento di Scienze Mediche e Chirurgiche (DIMEC)</li>
+                            <li>Dipartimento di Scienze per la Qualità della Vita (QUVI)</li>
+                        </ul>
+                    </div>
+
+                    <div class="institution">
+                        <h4 class="institution-name">
+                            IRCCS Azienda Ospedaliero-Universitaria di Bologna - Policlinico di Sant'Orsola (IRCCS AUBO)
+                        </h4>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Parma -->
+            <section class="participant-city">
+                <h3 class="city-name">Parma</h3>
+
+                <div class="city-institutions">
+                    <div class="institution">
+                        <h4 class="institution-name">
+                            University of Parma (UNIPR)
+                        </h4>
+
+                        <ul class="department-list">
+                            <li>
+                                Dipartimento di Scienze Chimiche, della Vita e
+                                della Sostenibilità Ambientale
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Modena -->
+            <section class="participant-city">
+                <h3 class="city-name">Modena</h3>
+
+                <div class="city-institutions">
+                    <div class="institution">
+                        <h4 class="institution-name">
+                            University of Modena and Reggio Emilia (UNIMORE)
+                        </h4>
+
+                        <ul class="department-list">
+                            <li>Dipartimento di Scienze della Vita</li>
+                            <li>Centro di Medicina Rigenerativa (CMR)</li>
+                            <li>
+                                Dipartimento di Scienze Mediche e Chirurgiche
+                                Materno-Infantili e dell'Adulto
+                            </li>
+                            <li>
+                                Dipartimento di Scienze Biomediche,
+                                Metaboliche e Neuroscienze
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Reggio Emilia -->
+            <section class="participant-city">
+                <h3 class="city-name">Reggio Emilia</h3>
+
+                <div class="city-institutions">
+                    <div class="institution">
+                        <h4 class="institution-name">
+                            AUSL-IRCCS Arcispedale Santa Maria Nuova di Reggio Emilia
+                        </h4>
+
+                        <ul class="department-list">
+                            <li>Laboratorio di Ricerca Traslazionale</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Meldola -->
+            <section class="participant-city">
+                <h3 class="city-name">Meldola</h3>
+
+                <div class="city-institutions">
+                    <div class="institution">
+                        <h4 class="institution-name">
+                            IRST IRCCS "Dino Amadori"
+                        </h4>
+
+                        <ul class="department-list">
+                            <li>Unit Preclinic and Osteoncology</li>
+                            <li>SSD Terapie cellulari avanzate e Tumori rari</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+</section>
+
+        <!-- TEAM -->
+        <section class="section section-alt" id="team">
+            <div class="container">
+                <h2 class="section-title">Team</h2>
+                <p class="section-intro">The organizing committee.</p>
+                <ul class="team-grid">
+                    <li class="member">
+                        <div class="member-photo" aria-hidden="true">
+                            <img src="./images/AlessiaCiarrocchi.jpg" alt="Alessia Ciarrocchi">
+                        </div>
+                        <h3 class="member-name">Alessia Ciarrocchi</h3>
+                        <p class="member-role">Role &middot; Institution</p>
+                    </li>
+                    <li class="member">
+                        <div class="member-photo" aria-hidden="true"></div>
+                        <h3 class="member-name">Lorenzo Montanaro</h3>
+                        <p class="member-role">Role &middot; Institution</p>
+                    </li>
+                    <li class="member">
+                        <div class="member-photo" aria-hidden="true"></div>
+                        <h3 class="member-name">Emanuela Ferracin</h3>
+                        <p class="member-role">Role &middot; Institution</p>
+                    </li>
+                    <li class="member">
+                        <div class="member-photo" aria-hidden="true">
+                            <img src="./images/MilaGugnoni.jpg" alt="Mila Gugnoni">
+                        </div>
+                        <h3 class="member-name">Mila Gugnoni</h3>
+                        <p class="member-role">Role &middot; Institution</p>
+                    </li>
+                    <li class="member">
+                        <div class="member-photo" aria-hidden="true"></div>
+                        <h3 class="member-name">Marianna Penzo</h3>
+                        <p class="member-role">Role &middot; Institution</p>
+                    </li>
+                    <li class="member">
+                        <div class="member-photo" aria-hidden="true">
+                            <img src="./images/EmanueleVitale.jpg" alt="Emanuele Vitale">
+                        </div>
+                        <h3 class="member-name">Emanuele Vitale</h3>
+                        <p class="member-role">Role &middot; Institution</p>
+                    </li>
+                    <li class="member">
+                        <div class="member-photo" aria-hidden="true">
+                            <img src="./images/RebeccaVezzani.jpg" alt="Rebecca Vezzani">
+                        </div>
+                        <h3 class="member-name">Rebecca Vezzani</h3>
+                        <p class="member-role">Role &middot; Institution</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="section" id="contact">
+            <div class="container">
+                <h2 class="section-title">Contact and Media</h2>
+                <p class="section-intro">Get in touch and follow us.</p>
+
+                <div class="contact-links">
+                    <!-- Email -->
+                    <a href="mailto:info@example.com"
+                    aria-label="Send us an email">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="3" y="5" width="18" height="14" rx="2"/>
+                            <path d="m3 7 9 6 9-6"/>
+                        </svg>
+                    </a>
+
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Facebook (opens in a new tab)">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M15 21v-8h3l.5-4H15V7
+                                    c0-1.2.4-2 2-2h1V1.4
+                                    C17.5 1.1 16.5 1 15.5 1
+                                    12.5 1 11 2.8 11 6v3H8v4h3v8"/>
+                        </svg>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram (opens in a new tab)">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="3" y="3" width="18" height="18" rx="5"/>
+                            <circle cx="12" cy="12" r="4"/>
+                            <circle cx="17.5" cy="6.5" r="1"/>
+                        </svg>
+                    </a>
+
+                    <!-- X -->
+                    <a href="https://x.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="X (opens in a new tab)">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M4 3L20 21H16.5L0.5 3H4Z"
+                                transform="translate(1.75 0)"
+                                stroke-linejoin="miter"/>
+                            <path d="M20 3L4 21"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="site-footer">
-        <p>tResLab</p>
+        <p>Emilia-Romagna RNA Salon &middot; <a href="/">tResLab</a></p>
     </footer>
     <script src="../js/main.js" defer></script>
 </body>

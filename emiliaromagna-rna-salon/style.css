@@ -1,0 +1,454 @@
+/* Emilia-Romagna RNA Salon — page-specific styles.
+   Loaded after ../css/style.css (shared header, nav, footer). */
+
+.salon {
+    /* Greens sampled from the RNA Salon logo */
+    --color-accent: #1f6b52;
+    --color-accent-dark: #0c3f38;
+    --color-accent-light: #8ebaa1;
+    --color-secondary: #8ebaa1;
+    --color-surface: #f2f8f4;
+    --color-border: #dde8e2;
+    --content-width: 64rem;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+.salon h1,
+.salon h2,
+.salon h3 {
+    color: var(--color-accent-dark);
+    line-height: 1.25;
+}
+
+.salon a {
+    color: var(--color-accent);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+}
+
+.container {
+    width: 100%;
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
+
+/* Hero */
+.hero {
+    padding: 3rem 0 4rem;
+    border-bottom: 1px solid var(--color-border);
+    background-image:
+        linear-gradient(
+            120deg,
+            rgba(145, 182, 170, 0.5) 0%,
+            rgba(255, 255, 255, 0.7) 30%
+        ),
+        url("./images/rna-background.png");
+
+    background-repeat: no-repeat, no-repeat;
+    background-position: right center, left -100px top -100px;
+    background-size: auto, 28rem;}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero-logo {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.hero-title::after{
+    content: "";
+    display: block;
+    width: 5rem;
+    height: 3px;
+    margin-top: 0.75rem;
+    background-color: var(--color-accent-light);
+}
+
+.hero-title {
+    font-size: 2rem;
+}
+
+.hero-lead {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+
+    max-width: 36rem;
+    margin: 0 0 2rem;
+
+    color: var(--color-muted);
+    font-size: 1.25rem;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+/* Base Button */
+.salon .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.65rem 1.5rem;
+    border: 1px solid transparent;
+    border-radius: 36px;
+
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    line-height: 1.4;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+/* Primary */
+.salon .button-primary {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    color: #fff;
+}
+
+/* Secondary */
+.salon .button-secondary {
+    background-color: transparent;
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+}
+
+/* Primary: hover */
+.salon .button-primary:hover {
+    background-color: var(--color-accent-dark);
+    border-color: var(--color-accent-dark);
+    color: #fff;
+}
+
+/* Secondary: hover */
+.salon .button-secondary:hover {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    color: #fff;
+}
+
+/* Keyboard focus */
+.salon .button:focus-visible {
+    outline: 2px solid var(--color-accent-dark);
+    outline-offset: 3px;
+}
+
+/* Sections */
+.section {
+    padding: 4rem 0;
+}
+
+.section-alt {
+    background-color: var(--color-surface);
+}
+
+.section-title {
+    margin: 0 0 0.5rem;
+    font-size: 1.75rem;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 2.5rem;
+    height: 3px;
+    margin-top: 0.75rem;
+    background-color: var(--color-accent-light);
+}
+
+.section-intro {
+    margin: 1rem 0 1rem;
+    color: var(--color-muted);
+}
+
+.section-emphasis {
+    color: var(--color-accent);
+    font-weight: 600;
+}
+
+.card-list,
+.participant-list,
+.team-grid {
+    list-style: none;
+    margin: 2rem 0 0;
+    padding: 0;
+}
+
+/* News & Events */
+.card-list {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.card {
+    padding: 1.5rem;
+    border: 1px solid var(--color-border);
+    border-left: 3px solid var(--color-accent);
+    background-color: var(--color-background);
+}
+
+.card-date {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+}
+
+.card-title {
+    margin: 0.25rem 0;
+    font-size: 1.25rem;
+}
+
+.card-meta {
+    margin: 0 0 0.5rem;
+    color: var(--color-muted);
+    font-size: 0.9375rem;
+}
+
+.card p:last-child {
+    margin-bottom: 0;
+}
+
+/* Participants */
+#participants {
+    background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0.9)
+        ),
+        url("./images/partecipant-background.png");
+
+    background-size: cover, 50%;
+    background-position: center, top right;
+    background-repeat: no-repeat;
+}
+
+/* ==========================================================
+   PARTICIPANTS
+   ========================================================== */
+
+/* Cities container */
+.participant-cities {
+    margin-top: 2rem;
+}
+
+/* City row */
+.participant-city {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+
+    padding: 1.25rem 0;
+    border-top: 1px solid var(--color-border);
+}
+
+/* City name */
+.city-name {
+    margin: 0;
+
+    color: var(--color-accent-dark);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+/* Institutions */
+.city-institutions {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    min-width: 0;
+}
+
+.institution-name {
+    margin: 0;
+
+    color: var(--color-accent);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+/* Departments */
+.department-list {
+    display: grid;
+    gap: 0.5rem;
+
+    margin: 0.75rem 0 0;
+    padding: 0 0 0 1rem;
+
+    list-style: none;
+    border-left: 2px solid var(--color-border);
+}
+
+.department-list li {
+    color: var(--color-muted);
+    font-size: 0.875rem;
+    line-height: 1.55;
+}
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+@media (min-width: 40rem) {
+
+    .participant-city {
+        grid-template-columns: 8rem minmax(0, 1fr);
+        gap: 1.5rem;
+
+        padding: 1.5rem 0;
+    }
+
+    .city-name {
+        font-size: 1.125rem;
+    }
+}
+
+/* Team */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+    gap: 2rem;
+    text-align: center;
+}
+
+.member-photo {
+    width: 8rem;
+    height: 8rem;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    background-color: var(--color-surface);
+    border: 2px solid var(--color-accent-light);
+
+}
+
+.member-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position: top;
+    border-radius: 50%;
+}
+
+
+.member-name {
+    margin: 0;
+    font-size: 1.0625rem;
+}
+
+.member-role {
+    margin: 0.25rem 0 0;
+    color: var(--color-muted);
+    font-size: 0.9375rem;
+}
+
+/* Contact */
+.contact-links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.contact-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 3rem;
+    height: 3rem;
+
+    color: var(--color-accent);
+    border: 1px solid var(--color-border);
+    border-radius: 50%;
+
+    transition:
+        color 200ms ease,
+        background-color 200ms ease,
+        border-color 200ms ease,
+        transform 200ms ease;
+}
+
+.contact-links svg {
+    width: 1.4rem;
+    height: 1.4rem;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.contact-links a:hover {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+.contact-links a:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .contact-links a {
+        transition: none;
+    }
+}
+
+@media (min-width: 40rem) {
+    .hero {
+        padding: 4rem 0 5rem;
+        background-position: right center, center center;
+        background-size: auto, 70%;
+    }
+
+    .hero-grid {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        gap: 8rem;
+    }
+
+    .card-list {
+        grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+}
